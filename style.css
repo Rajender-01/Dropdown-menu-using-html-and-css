@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container{
+    background-color: black;
+    height: 50px;
+    width: 100%;  
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.mylogo{
+    color: red;
+    font-size: 28px;
+    padding-left: 25px;
+}
+
+.sch{
+    width: 25rem;
+    padding: 6px;
+    border-radius: 5px;
+    margin-bottom: 2px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+}
+@media (max-width:768px){
+    .sch{
+        display: none;
+    }
+}
+@media (max-width:1220px){
+    .sch{
+        width: 15rem;
+    }
+}
+@media (max-width:1024px){
+    .sch{
+        width: 8rem;
+    }
+}
+@media (max-width:940px){
+    .sch{
+        display: none;
+    }
+}
+.container ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.container ul li{
+    padding: 17px 15px;
+    position: relative;  
+}
+.container ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s;   
+}
+.container ul li a:hover{
+    color: rgb(250, 32, 32);
+}
+.dropmenu{
+    display: none;
+}
+.container ul li:hover .dropmenu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: black;
+}
+.container ul li:hover .dropmenu ul{
+    display: block;
+    margin: 10px;
+}
+.container ul li:hover .dropmenu ul li{
+    width: 100px;
+    padding: 10px;
+}
+.fas{
+    float: right;
+    margin-left: 10px;
+}
+.dropmenu1{
+    display: none;   
+}
+.dropmenu ul li:hover .dropmenu1{
+    display: block;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    background-color: black;   
+}
