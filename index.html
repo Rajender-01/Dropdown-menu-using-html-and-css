@@ -6,41 +6,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Drop Down Navbar Menu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <nav>
-            <h2 class="mylogo">My <span> Navbar </span> </h2>
-            <input class="sch" type="search" placeholder="search">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Courses <i class="fas fa-caret-down"></i> </a>
-                <div class="dropmenu">
-                    <ul>
-                        <li><a href="">python</a></li>
-                        <li><a href="">java</a></li>
-                        <li><a href="">web<i class="fas fa-caret-right"></i></a>
-                        <div class="dropmenu1">
-                            <ul>
-                                <li><a href="">front end</a></li>
-                                <li><a href="">Back end</a></li>
-                                <li><a href="">React js</a></li>
-                                <li><a href="">Djano</a></li>
-                            </ul>
-                        </div>
-                        </li>
-                        <li><a href="">Golang</a></li>
-                    </ul>
-                </div>
+            <h2 class="mylogo">My <span>Navbar</span></h2>
+
+            <input class="sch" type="search" placeholder="Search">
+
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+
+                <li class="dropdown">
+                    <a href="#">Courses <i class="fas fa-caret-down"></i></a>
+                    <div class="dropmenu">
+                        <ul>
+                            <li><a href="#">Python</a></li>
+                            <li><a href="#">Java</a></li>
+                            <li class="dropdown-sub">
+                                <a href="#">Web <i class="fas fa-caret-right"></i></a>
+                                <div class="dropmenu1">
+                                    <ul>
+                                        <li><a href="#">Front End</a></li>
+                                        <li><a href="#">Back End</a></li>
+                                        <li><a href="#">React JS</a></li>
+                                        <li><a href="#">Django</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">Golang</a></li>
+                        </ul>
+                    </div>
                 </li>
-                <li><a href="">Contact us</a></li>
-                <li><a href="">Privacy policy</a></li>
+
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
             </ul>
         </nav>
     </div>
